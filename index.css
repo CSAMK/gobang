@@ -1,0 +1,53 @@
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border: 1px solid rgb(207, 188, 188);
+    background-color: rgb(247,230,183);
+}
+
+.checkerboard {
+    width: 92%;
+    height:92%;
+    border-collapse: collapse;
+}
+
+.checkerboard td {
+    border: 1px solid #000;
+    position: relative;
+}
+
+/* 棋子的样式 */
+.chess {
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 90%;
+    height: 90%;
+    color: lightgray;
+    font-size: 12px;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chess.white {
+    background: #fff;
+}
+
+.chess.black {
+    background: #000;
+}
+
+.chess.win {
+    border: 1px solid red;
+    box-shadow: 0 0 3px 2px red;
+}
